@@ -18,6 +18,7 @@ likes.forEach(like => {
       }
     })
     .catch(error => {
+      document.querySelector("#modal h2").textContent = error
       document.getElementById("modal").classList.remove("hidden")
       setTimeout(() => {
         document.getElementById("modal").classList.add("hidden")
